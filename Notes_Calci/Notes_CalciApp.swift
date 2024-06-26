@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Notes_CalciApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BaseView()
+                .modelContainer(for: [Note.self])
         }
     }
 }
